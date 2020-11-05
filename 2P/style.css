@@ -19,9 +19,12 @@ li ul{
     background:purple;
 }
 .title{
-    text-transform:;
+    text-transform:capitalize;
 }
-
+aside{
+    width: 60%;
+    text-transform: ;
+}
 
 
 
