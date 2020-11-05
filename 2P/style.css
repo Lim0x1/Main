@@ -8,9 +8,19 @@ body{
 #container{
     width:100%;
 }
-
-
-
+li{
+    list-style:none;
+    display:flex;
+    flex-basis:30%;
+}
+li ul{
+    margin:2em;
+    padding:1em;
+    background:purple;
+}
+.title{
+    text-transform:;
+}
 
 
 
@@ -18,5 +28,5 @@ body{
 footer{
     height: 100px;
     border:1px;
-    border-radius:;
+    border-radius:1em;
 }
