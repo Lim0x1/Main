@@ -8,6 +8,13 @@ body{
 #container{
     width:100%;
 }
+nav{
+    height: 100px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-top:1px solid hsl(240, 50%, 50%); 
+    border-bottom:1px solid hsl(240, 50%, 50%);
+}
 li{
     list-style:none;
     display:flex;
@@ -19,11 +26,11 @@ li ul{
     background:purple;
 }
 .title{
-    text-transform:capitalize;
+    text-transform:uppercase;
 }
 aside{
     width: 60%;
-    text-transform: ;
+    
 }
 
 
@@ -32,4 +39,7 @@ footer{
     height: 100px;
     border:1px;
     border-radius:1em;
+}
+.foot{
+    color: red;
 }
