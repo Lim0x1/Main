@@ -9,49 +9,69 @@
 <body>
     <div id="container">
         
-        <nav><h1>Myjnia ręczna <span id="title">Błysk</span></h1>
-            <li>
-                <ul>Home</ul>
-                <ul>Cennik</ul>
-            </li>
-        </nav>
+        <header>
+            <h1>Myjnia ręczna <span id="title">Błysk</span></h1>
+            <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="" class="active">Cennik</a></li>
+            </ul>
+            </nav>
+        </header>
         <main>
-            <header>
-                <p>Podaj Imie</p>
-                <input type="text" placeholder="Wpisz swoje imie" required>
-            </header>
-            
-            <fieldset>
-                <legend></legend>
-                Mycie zewnętrzne 30zł<input type="checkbox">
-                Suszenie 10zł<input type="checkbox">
-                Woskowanie 15zł<input type="checkbox">
-                Odkurzanie 10zł<input type="checkbox">
-            </fieldset>
-            <fieldset>
-                <legend></legend>
-                <select>
-                    <option value="">Mały</option>
-                    <option value="">Średni (+10%)</option>
-                    <option value="">Van (+20%)</option>
-                    <option value="">Bus (+45%)</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <legend>Karta stałego klienta</legend>
-                Brak<input type="radio">
-                Sredna(-5%)<input type="radio">
-                Zlota(-15%)<input type="radio">
-            </fieldset>
-            <input type="button" value="Wyczyść">
-            <input type="button" value="Odlicz">
-            <p>Koszt usługi:</p>
-        </main>
-        <aside>
-            <h3>Rezerwacja na godzine</h3>
-            <p>Rezerwacja na godzine.Rezeruj termin mycia samochodu.Masz mało czasu?Nielubiszczekać?Zarezerwuj mycie pojazdu na konkretną godzine</p>
-        </aside>
-        <footer><span class="foot">Igor Krawczyk</span>2P</footer>
-    </div>
+            <h2>Oblicz koszt usługi</h2>
+            <form action="#">
+                <label for="first">
+                    <input type="text" name="imie" id="first" placeholder="Wpisz swoje imię" required value="">    
+                </label>
+                <fieldset>
+                    <legend>Usługa</legend>
+                    <label for="wasing">
+                    Mycie zewnętrzene 30zł <input type="checkbox" name="service" id="washing" value="30" checked disabled></label>
+                    <label for="drying">
+                    Suszenie 10zł <input name="service" id="drying" value="10"></label>
+                    <label for="waxing">
+                    Woskowanie 15zł<input name="service" id="waxing" value="15"></label>
+                    <label for="vacuuming">
+                    Odkurznie 10zł <input name="service" id="vacuuming" value="10"> </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rodzaj pojazdu</legend>
+                    <label for="carType">
+                        <select name="carType" id="carType">
+                            <option value="1">Mały</option>
+                            <option value="1.1">Sredni(+10%)</option>
+                            <option value="1.2">Van(+20%)</option>
+                            <option value="1.45">Bus(+45%)</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Karta stałego klienta</legend>
+                    <label for="none">Brak <input type="radio" name="card" id="none" value="1" checked></label>
+                    <label for="silver">Srebna(-5%) <input type="radio" name="card" id="silver" value="0.95"></label>
+                    <label for="gold">Złota (-15%)<input type="radio" name="card" id="gold" value="0.85"></label>
+                </fieldset>
+                <fieldset>
+                    <input type="reset" value="Wyczyść">
+                    <input type="submit" value="Oblicz">
+                </fieldset>
+            </form>
+            <figure>
+                <img src="hand_m.jpg" alt="Myjnia ręczna">
+            </figure>
+                <section>
+                    <p>Koszt usługi:<span id="cost"></span></p>
+                </section>
+                </main>
+                <aside>
+                    <h3>Rezerwacja na godzinę</h3>
+                    <p>
+                       Rezerwacja na godzineRezerwuj termin mycia samochodu masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę
+                    </p>
+                </aside>
+                <footer>
+                    <p><span>Igor Krawczyk</span>2p</p>
+                </footer>            
 </body>
 </html>
